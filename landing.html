@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-purple-300">
+    <header class="bg-purple shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">PT Abadi Sentosa</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#features" class="text-gray-600 hover:text-blue-500">Features</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-500">About</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-purple-200 text-black py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">Welcome to Our Product</h2>
+                <p class="text-3x1 italic mb-6">Get organized and express yourself with our stylish and functional stationery.</p>
+                <a href="#features" class="bg-white text-blue-500 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">Learn More</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">Product</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Pencil</h4>
+			<center>
+			<p><img src="https://artwhale.ph/wp-content/uploads/2021/06/Derwent-Charcoal-Pencil-Medium.jpg" width=100px></p>
+                        <p>Crafted for precision, our premium pencils offer a smooth writing experience with a durable lead that resists breakage.</p>
+                    </div>
+                    <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Ruler</h4>
+			<center>
+			<p><img src="https://images-cdn.ubuy.co.id/64dc7cde54de0532e64b0a7b-plastic-ruler-straight-ruler-2pcs.jpg" width=100px></p>
+			<p>Our high-quality ruler combines durability and accuracy, featuring clear measurements for precise drawing and measuring.</p>
+                    </div>
+                    <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Eraser</h4>
+			<center>
+			<p><img src="https://faber-castell.co.id/cfind/source/thumb/images/product/gwm/700x700-gwm/contain_w700_h700_187171.jpg.png" width=100px></p>
+                        <p>Experience effortless corrections with our premium eraser, designed to remove pencil marks cleanly without smudging or tearing paper.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white-50 py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">About Us</h3>
+                <p class="max-w-2xl mx-auto">At PT Abadi Sentosa, we are passionate about providing high-quality stationery products that inspire creativity and productivity. Founded with a commitment to excellence, we believe that the right tools can make all the difference in your work and study experience.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">Contact Us</h3>
+                <form action="http://localhost/submit.php" method="POST" class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-left font-bold">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-left font-bold">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-left font-bold">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-2 border rounded-lg" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BrandName. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
